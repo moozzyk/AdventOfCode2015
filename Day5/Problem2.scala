@@ -1,8 +1,6 @@
 object Problem2 extends App {
     println(args.foldLeft(0)((t, v) => t + (if (isNice(v)) 1 else 0)));
 
-    // args.filter(isNice(_)).foreach(println(_));
-
     def isNice(s: String) : Boolean = {
         return hasPalindrome3(s) && hasRepeatingSequence(s);
     }
