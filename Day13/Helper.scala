@@ -20,5 +20,4 @@ object Helper {
         happiness((people(0), people.last)) + happiness((people.last, people(0))) +
         people.sliding(2).map(s => happiness((s(0), s(1))) + happiness((s(1), s(0)))).sum
     }
-
 }
