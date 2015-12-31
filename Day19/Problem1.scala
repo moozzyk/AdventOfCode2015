@@ -1,6 +1,5 @@
 object Problem1 extends App {
 
-
     val inputLines = scala.io.Source.fromFile(args(0)).getLines.toList;
     val replacements = buildReplacements(inputLines.take(inputLines.size - 2))
     val input = inputLines.last
